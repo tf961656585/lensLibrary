@@ -1,0 +1,72 @@
+[
+  {
+    "id": "canon_ef_50mm_f1_8_stm",
+    "mount": "Canon EF",
+    "brand": "Canon",
+    "model": "EF 50mm f/1.8 STM",
+    "focal_length": "50mm",
+    "aperture": "f/1.8 – f/22",
+    "min_focus_distance": "0.35m",
+    "filter_thread": "49mm",
+    "weight": "160g",
+    "dimensions": "69 x 39mm",
+    "release_year": 2015,
+    "link": "https://www.usa.canon.com/shop/p/ef-50mm-f-1-8-stm-lens"
+  },
+  {
+    "id": "nikon_f_50mm_f1_8g",
+    "mount": "Nikon F",
+    "brand": "Nikon",
+    "model": "AF-S NIKKOR 50mm f/1.8G",
+    "focal_length": "50mm",
+    "aperture": "f/1.8 – f/16",
+    "min_focus_distance": "0.45m",
+    "filter_thread": "58mm",
+    "weight": "185g",
+    "dimensions": "73 x 52mm",
+    "release_year": 2011,
+    "link": "https://www.nikonusa.com/en/nikon-products/product/camera-lenses/af-s-nikkor-50mm-f%2F1.8g.html"
+  },
+  {
+    "id": "sony_e_35mm_f1_8_oss",
+    "mount": "Sony E",
+    "brand": "Sony",
+    "model": "E 35mm f/1.8 OSS",
+    "focal_length": "35mm",
+    "aperture": "f/1.8 – f/22",
+    "min_focus_distance": "0.30m",
+    "filter_thread": "49mm",
+    "weight": "154g",
+    "dimensions": "62 x 45mm",
+    "release_year": 2015,
+    "link": "https://www.sony.com/electronics/interchangeable-lens-lenses/sel35f18"
+  },
+  {
+    "id": "sigma_24_70mm_f2_8_art_canon",
+    "mount": "Canon EF",
+    "brand": "Sigma",
+    "model": "24-70mm f/2.8 DG OS HSM Art",
+    "focal_length": "24-70mm",
+    "aperture": "f/2.8 – f/22",
+    "min_focus_distance": "0.37m",
+    "filter_thread": "82mm",
+    "weight": "900g",
+    "dimensions": "88.2 x 107.3mm",
+    "release_year": 2017,
+    "link": "https://www.sigmaphoto.com/24-70mm-f2-8-dg-os-hsm-a-canon"
+  },
+  {
+    "id": "tamron_sp_70_200mm_f2_8_nikon",
+    "mount": "Nikon F",
+    "brand": "Tamron",
+    "model": "SP 70-200mm f/2.8 Di VC USD G2",
+    "focal_length": "70-200mm",
+    "aperture": "f/2.8 – f/32",
+    "min_focus_distance": "0.95m",
+    "filter_thread": "77mm",
+    "weight": "1475g",
+    "dimensions": "86 x 195mm",
+    "release_year": 2017,
+    "link": "https://www.tamron.jp/en/product/lenses/sp_70-200mm_f2-8_di_vc_usd_g2.html"
+  }
+]

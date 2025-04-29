@@ -1,0 +1,57 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# LensLibrary 项目指南
+该项目是一个"各种卡口镜头的终极库"，也可称为字典，旨在通过 Web 技术让用户查询某个镜头卡口（mount）拥有的各品牌镜头型号，并提供方便的购买指导及镜头信息查询。
+
+## 项目结构
+- [README.md](mdc:README.md): 项目总体说明。
+- src/: 前端源代码目录，包含页面、组件及样式等。
+- public/: 静态资源目录，如 index.html、favicon 等。
+- data/: 镜头数据存放目录，通常以 JSON/YAML 格式组织。
+- .cursor/rules/: Cursor 规则文件目录。
+
+## 主要功能
+- 按卡口类型查询镜头列表
+- 按品牌筛选镜头
+- 查看镜头详情及规格参数
+- 提供购买链接及价格参考
+
+## 核心 MVP 功能
+- 首页：展示卡口（mount）列表，点击进入对应镜头列表
+- 镜头列表页：按品牌/焦段筛选，显示镜头名称、缩略图和主要参数（焦距、光圈范围）
+- 镜头详情页：展示完整规格参数及购买链接
+- 全局搜索（可选）：按名称或品牌模糊查询
+
+## 技术栈（MVP）
+- 前端：Next.js + React + TypeScript
+- 样式：Tailwind CSS（或 CSS Modules）
+- 数据存储：本地 JSON（data/ 目录）
+- 部署：Vercel（静态站点 + API Routes）
+
+## 安装与运行（MVP）
+1. 克隆并进入项目目录
+   ```bash
+   git clone https://github.com/yourname/lensLibrary.git
+   cd lensLibrary
+   ```
+2. 安装依赖
+   ```bash
+   npm install
+   ```
+3. 启动开发环境
+   ```bash
+   npm run dev
+   ```
+4. 访问应用
+   ```text
+   http://localhost:3000
+   ```
+
+## Cursor 规则说明
+该规则文件用于帮助 AI 快速了解项目概貌及常见路径，以便于更有效地进行代码导航与编辑。
+
+
+
