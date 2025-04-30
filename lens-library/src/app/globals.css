@@ -1,0 +1,45 @@
+@import '../styles/tokens.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  @apply bg-background text-foreground font-sans;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* 自定义滚动条样式 */
+ul::-webkit-scrollbar {
+  width: 8px;
+}
+ul::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+}
+ul:hover::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary-dark);
+}
+
+/* 通用交互动效 */
+a, button, select, input {
+  @apply transition-all duration-200;
+  transition-timing-function: ease-in-out;
+}

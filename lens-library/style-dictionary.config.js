@@ -1,0 +1,17 @@
+const StyleDictionary = require('style-dictionary');
+
+module.exports = {
+  source: ['tokens/**/*.json'],
+  platforms: {
+    css: {
+      transformGroup: 'css',
+      buildPath: 'src/styles/',
+      files: [
+        {
+          destination: 'tokens.css',
+          format: 'css/variables'
+        }
+      ]
+    }
+  }
+}; 
