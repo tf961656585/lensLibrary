@@ -31,11 +31,11 @@ export default function RootLayout({
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <div className="flex flex-col min-h-screen">
-          <header className="bg-background py-4 shadow-md">
+          <header className="bg-background py-4 border-b border-secondary-200">
             <div className="container mx-auto px-4 flex items-center justify-between">
               <nav className="flex flex-col sm:flex-row sm:space-x-4 space-y-2 sm:space-y-0">
-                <Link href="/" className="text-primary hover:underline">首页</Link>
-                <Link href="/search" className="text-primary hover:underline">搜索</Link>
+                <Link href="/" className="text-secondary-700 hover:text-primary hover:underline">首页</Link>
+                <Link href="/search" className="text-secondary-700 hover:text-primary hover:underline">搜索</Link>
               </nav>
             </div>
           </header>

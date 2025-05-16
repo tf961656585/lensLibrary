@@ -1,0 +1,67 @@
+{
+  "color": {
+    "light": {
+      "background": { "value": "#ffffff" },
+      "foreground": { "value": "#111827" },
+      "primary": {
+        "50": { "value": "#eef2ff" },
+        "100": { "value": "#e0e7ff" },
+        "200": { "value": "#c7d2fe" },
+        "300": { "value": "#a5b4fc" },
+        "400": { "value": "#818cf8" },
+        "500": { "value": "#6366f1" },
+        "600": { "value": "#4f46e5" },
+        "700": { "value": "#4338ca" },
+        "800": { "value": "#3730a3" },
+        "900": { "value": "#312e81" },
+        "DEFAULT": { "value": "{color.light.primary.600.value}" },
+        "darker": { "value": "{color.light.primary.700.value}" }
+      },
+      "secondary": {
+        "50": { "value": "#f9fafb" },
+        "100": { "value": "#f3f4f6" },
+        "200": { "value": "#e5e7eb" },
+        "300": { "value": "#d1d5db" },
+        "400": { "value": "#9ca3af" },
+        "500": { "value": "#6b7280" },
+        "600": { "value": "#4b5563" },
+        "700": { "value": "#374151" },
+        "800": { "value": "#1f2937" },
+        "900": { "value": "#111827" },
+        "DEFAULT": { "value": "{color.light.secondary.500.value}" }
+      }
+    },
+    "dark": {
+      "background": { "value": "#111827" },
+      "foreground": { "value": "#e5e7eb" },
+      "primary": {
+        "50": { "value": "#3730a3" },
+        "100": { "value": "#312e81" },
+        "200": { "value": "#4338ca" },
+        "300": { "value": "#4f46e5" },
+        "400": { "value": "#6366f1" },
+        "500": { "value": "#818cf8" },
+        "600": { "value": "#a5b4fc" },
+        "700": { "value": "#c7d2fe" },
+        "800": { "value": "#e0e7ff" },
+        "900": { "value": "#eef2ff" },
+        "DEFAULT": { "value": "{color.dark.primary.500.value}" },
+        "darker": { "value": "{color.dark.primary.600.value}" }
+      },
+      "secondary": {
+        "50": { "value": "#1f2937" },
+        "100": { "value": "#374151" },
+        "200": { "value": "#4b5563" },
+        "300": { "value": "#6b7280" },
+        "400": { "value": "#9ca3af" },
+        "500": { "value": "#d1d5db" },
+        "600": { "value": "#e5e7eb" },
+        "700": { "value": "#f3f4f6" },
+        "800": { "value": "#f9fafb" },
+        "900": { "value": "#ffffff" },
+        "DEFAULT": { "value": "{color.dark.secondary.500.value}" }
+      }
+    }
+  }
+} 
+ 

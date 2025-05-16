@@ -1,0 +1,103 @@
+@import '../styles/tokens.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Default to light theme tokens */
+  --background: var(--color-light-background);
+  --foreground: var(--color-light-foreground);
+
+  --color-primary-50: var(--color-light-primary-50);
+  --color-primary-100: var(--color-light-primary-100);
+  --color-primary-200: var(--color-light-primary-200);
+  --color-primary-300: var(--color-light-primary-300);
+  --color-primary-400: var(--color-light-primary-400);
+  --color-primary-500: var(--color-light-primary-500);
+  --color-primary-600: var(--color-light-primary-600);
+  --color-primary-700: var(--color-light-primary-700);
+  --color-primary-800: var(--color-light-primary-800);
+  --color-primary-900: var(--color-light-primary-900);
+  --color-primary-DEFAULT: var(--color-light-primary-default);
+  --color-primary-darker: var(--color-light-primary-darker);
+
+  --color-secondary-50: var(--color-light-secondary-50);
+  --color-secondary-100: var(--color-light-secondary-100);
+  --color-secondary-200: var(--color-light-secondary-200);
+  --color-secondary-300: var(--color-light-secondary-300);
+  --color-secondary-400: var(--color-light-secondary-400);
+  --color-secondary-500: var(--color-light-secondary-500);
+  --color-secondary-600: var(--color-light-secondary-600);
+  --color-secondary-700: var(--color-light-secondary-700);
+  --color-secondary-800: var(--color-light-secondary-800);
+  --color-secondary-900: var(--color-light-secondary-900);
+  --color-secondary-DEFAULT: var(--color-light-secondary-default);
+  
+  /* Scrollbar specific variables */
+  --scrollbar-thumb-bg: var(--color-light-primary-darker);
+  --scrollbar-thumb-hover-bg: var(--color-light-primary-800); /* Or a slightly different shade if defined */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Switch to dark theme tokens */
+    --background: var(--color-dark-background);
+    --foreground: var(--color-dark-foreground);
+
+    --color-primary-50: var(--color-dark-primary-50);
+    --color-primary-100: var(--color-dark-primary-100);
+    --color-primary-200: var(--color-dark-primary-200);
+    --color-primary-300: var(--color-dark-primary-300);
+    --color-primary-400: var(--color-dark-primary-400);
+    --color-primary-500: var(--color-dark-primary-500);
+    --color-primary-600: var(--color-dark-primary-600);
+    --color-primary-700: var(--color-dark-primary-700);
+    --color-primary-800: var(--color-dark-primary-800);
+    --color-primary-900: var(--color-dark-primary-900);
+    --color-primary-DEFAULT: var(--color-dark-primary-default);
+    --color-primary-darker: var(--color-dark-primary-darker);
+
+    --color-secondary-50: var(--color-dark-secondary-50);
+    --color-secondary-100: var(--color-dark-secondary-100);
+    --color-secondary-200: var(--color-dark-secondary-200);
+    --color-secondary-300: var(--color-dark-secondary-300);
+    --color-secondary-400: var(--color-dark-secondary-400);
+    --color-secondary-500: var(--color-dark-secondary-500);
+    --color-secondary-600: var(--color-dark-secondary-600);
+    --color-secondary-700: var(--color-dark-secondary-700);
+    --color-secondary-800: var(--color-dark-secondary-800);
+    --color-secondary-900: var(--color-dark-secondary-900);
+    --color-secondary-DEFAULT: var(--color-dark-secondary-default);
+
+    /* Scrollbar specific variables for dark mode */
+    --scrollbar-thumb-bg: var(--color-dark-primary-darker);
+    --scrollbar-thumb-hover-bg: var(--color-dark-primary-900); /* Or a slightly different shade from dark tokens */
+  }
+}
+
+body {
+  @apply bg-background text-foreground font-sans;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* 自定义滚动条样式 */
+ul::-webkit-scrollbar {
+  width: 8px;
+}
+ul::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-bg);
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+}
+ul:hover::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-hover-bg);
+}
+
+/* 通用交互动效 */
+a, button, select, input {
+  @apply transition-all duration-200;
+  transition-timing-function: ease-in-out;
+}
